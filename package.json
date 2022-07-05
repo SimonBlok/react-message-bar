@@ -1,6 +1,6 @@
 {
   "name": "react-message-bar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple React component for showing and dismissing a messagebar",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -35,5 +35,13 @@
   "peerDependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/SimonBlok/react-message-bar/issues"
+  },
+  "homepage": "https://github.com/SimonBlok/react-message-bar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimonBlok/react-message-bar"
   }
 }

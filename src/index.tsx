@@ -1,15 +1,15 @@
 import React, {ReactNode, useState} from "react";
 
-interface AnnouncementBarProps {
+interface MessageBarProps {
 	children: ReactNode,
-	announcementId?: string //to keep new announcements visible after dismissing
+	messageId?: string //to keep new messages visible after dismissing
 }
 
-const AnnouncementBar = ({children, announcementId = 'default-announcement'}: AnnouncementBarProps) => {
-	const [isOpen, setIsOpen] = useState(null === localStorage.getItem(announcementId))
+const MessageBar = ({children, messageId = 'default-message'}: MessageBarProps) => {
+	const [isOpen, setIsOpen] = useState(null === localStorage.getItem(messageId))
 
 	const handleDismissBar = () => {
-		localStorage.setItem(announcementId, 'dismissed')
+		localStorage.setItem(messageId, 'dismissed')
 		setIsOpen(false)
 	}
 
@@ -21,7 +21,7 @@ const AnnouncementBar = ({children, announcementId = 'default-announcement'}: An
 		<div
 			className="react-message-bar--dismiss-button"
 			onClick={handleDismissBar}
-			aria-label="Dismiss announcement"
+			aria-label="Dismiss message"
 		>
 			X
 		</div>
@@ -29,4 +29,4 @@ const AnnouncementBar = ({children, announcementId = 'default-announcement'}: An
 	</div>
 }
 
-export default AnnouncementBar
+export default MessageBar

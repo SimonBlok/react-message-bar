@@ -1,0 +1,10 @@
+.react-message-bar--bar {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.react-message-bar--dismiss-button {
+    
+}

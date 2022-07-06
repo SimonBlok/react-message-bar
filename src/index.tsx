@@ -18,13 +18,13 @@ const MessageBar = ({children, messageId = 'default-message'}: MessageBarProps) 
 	}
 
 	return <div className="react-message-bar--bar">
-		<div
+		<button
 			className="react-message-bar--dismiss-button"
 			onClick={handleDismissBar}
 			aria-label="Dismiss message"
 		>
 			X
-		</div>
+		</button>
 		{children}
 	</div>
 }

@@ -1,0 +1,11 @@
+.react-message-bar--bar {
+    background-color: darkgreen;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+
+.react-message-bar--dismiss-button {
+    position: absolute;
+    right: 20px;
+}

@@ -26,6 +26,11 @@ Import <code>react-message-bar</code>
 import ReactMessageBar from 'react-message-bar'
 ```
 
+Add default styling (optional)
+```js
+import 'react-message-bar/lib/styles/default.css'
+```
+
 Use the component in your app
 
 ```js

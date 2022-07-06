@@ -2,12 +2,15 @@
 
 ![npm](https://img.shields.io/npm/v/react-message-bar)
 
-This package gives a single component which shows a message/announcement bar on a page. A dismiss button is shown and
-clickable to dismiss the message, which hides the bar.
+This package provides a single component which shows a message/announcement bar on a page. A dismiss button is shown and
+clickable to closes the message for the current and further sessions.
 
 LocalStorage is used to hold the 'dismiss-state'.
-The component can receive an `announcement-id` prop to set a unique
+The component can receive an `announcement-id` prop to set a new
 message, which overrides the previous (dismissed) message.
+
+[Demo](https://codesandbox.io/s/react-message-bar-demo-vnvboz?file=/src/App.js)
+
 
 ## Install
 
@@ -24,6 +27,7 @@ import ReactMessageBar from 'react-message-bar'
 ```
 
 Use the component in your app
+
 ```js
 <ReactMessageBar>Hello, welcome to this announcement!</ReactMessageBar>
 ```
@@ -33,6 +37,9 @@ Or, to override dismissed bars
 ```js
 <ReactMessageBar messageId="message-2">Hello, welcome to this NEW announcement!</ReactMessageBar>
 ```
+
+## Styling
+Default styling is provided via CSS. All elements have classnames to apply your own styling.
 
 ## Props
 

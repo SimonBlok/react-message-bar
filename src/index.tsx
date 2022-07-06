@@ -5,7 +5,7 @@ interface MessageBarProps {
 	messageId?: string //to keep new messages visible after dismissing
 }
 
-const MessageBar = ({children, messageId = 'default-message'}: MessageBarProps) => {
+export const MessageBar = ({children, messageId = 'default-message'}: MessageBarProps) => {
 	const [isOpen, setIsOpen] = useState(null === localStorage.getItem(messageId))
 
 	const handleDismissBar = () => {
@@ -28,5 +28,3 @@ const MessageBar = ({children, messageId = 'default-message'}: MessageBarProps) 
 		{children}
 	</div>
 }
-
-export default MessageBar

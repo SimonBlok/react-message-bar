@@ -2,8 +2,8 @@
 
 ![npm](https://img.shields.io/npm/v/react-message-bar)
 
-This package provides a single component which shows a message/announcement bar on a page. A dismiss button is shown and
-clickable to closes the message for the current and further sessions.
+This package provides a single component which shows a message/announcement bar. A dismiss button is available and
+clickable to close the message for the current and further sessions.
 
 LocalStorage is used to hold the 'dismiss-state'.
 The component can receive an `announcement-id` prop to set a new
